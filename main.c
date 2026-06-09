@@ -1,19 +1,15 @@
 #include <stdio.h>
-
 #define HEIGHT 20
 #define WIDTH 40
-
 char canvas[HEIGHT][WIDTH];
-
 void initializeCanvas()
 {
-    int i, j;
-
-    for(i = 0; i < HEIGHT; i++)
+    int i,j;
+    for(i=0;i<HEIGHT;i++)
     {
-        for(j = 0; j < WIDTH; j++)
+        for(j=0;j<WIDTH;j++)
         {
-            canvas[i][j] = '_';
+            canvas[i][j]='_';
         }
     }
 }
@@ -21,25 +17,22 @@ void initializeCanvas()
 void drawLine(int row, int startCol, int endCol)
 {
     int j;
-
-    for(j = startCol; j <= endCol; j++)
+    for(j=startCol;j<=endCol;j++)
     {
         canvas[row][j] = '*';
     }
 }
 void drawRectangle(int row, int col, int height, int width)
 {
-    int i, j;
-
-    for(j = col; j < col + width; j++)
+    int i,j;
+    for(j=col;j<col+width;j++)
     {
-        canvas[row][j] = '*';
-        canvas[row + height - 1][j] = '*';
+        canvas[row][j]='*';
+        canvas[row+height-1][j]='*';
     }
-
-    for(i = row; i < row + height; i++)
+    for(i=row;i<row+height;i++)
     {
-        canvas[i][col] = '*';
+        canvas[i][col]='*';
         canvas[i][col + width - 1] = '*';
     }
 }
