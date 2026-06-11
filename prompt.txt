@@ -1,0 +1,20 @@
+1.What is the objective of this 2D Graphics Editor program?
+2.Explain the purpose of the Shape structure.
+3.Why is an array of structures used to store shapes?
+4.What is the role of the canvas array in the program?
+5.Explain the significance of shapeCount and nextID.
+6.Why was a structure chosen to represent graphical shapes?
+7.What information is stored in each Shape object?
+8.How does the program uniquely identify each shape?
+9.What is the purpose of the active field in the structure?
+10.What are the advantages of using an array of structures over separate arrays?
+11.Explain the working of the initializeCanvas() function.
+12.How does the drawLine() function draw a horizontal line?
+13.Describe the logic used in drawRectangle().
+14.How is a triangle generated in the drawTriangle() function?
+15.Explain the mathematical principle used in drawCircle().
+16.What is the purpose of the redrawCanvas() function?
+17.Why is redrawCanvas() called after adding, deleting, or modifying a shape?
+18.Explain the working of displayCanvas().
+19.How does the addShape() function handle different shape types?
+20.Describe the process followed by deleteShape().
